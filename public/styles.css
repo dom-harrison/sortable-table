@@ -1,0 +1,115 @@
+body {
+  background: #f9f8f7;
+}
+
+.vrbo-logo {
+  background: url('./assets/logo.svg') no-repeat;
+  display: inline-block;
+  height: 40px;
+  width: 125px;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 .header {
+  color: #245bbc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid #dadada;
+  border-top: 0;
+  padding: 0 5px;
+}
+
+td {
+  background: white;
+  line-height: 24px;
+}
+
+td span {
+  display: none;
+}
+
+th {
+  background: #245bbc;
+  color: white;
+  cursor: pointer;
+  line-height: 30px;
+  position: sticky;
+  text-align: left;
+  top: 0;
+  user-select: none;
+}
+
+.email {
+  word-break: break-all;
+}
+
+#error {
+  color: #245bbc;
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  table {
+    width: 100%
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  table {
+    width: 70%
+  }
+
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  tr { 
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  
+  td { 
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    text-align: right;
+  }
+
+  td span {
+    color: #245bbc;
+    cursor: pointer;
+    display: inline-grid;
+    float: left;
+    font-weight: bold;
+  }
+
+  thead { 
+    display: none;
+  }
+
+  @media only screen and (max-width: 480px) {
+    table {
+      width: 100%
+    }
+
+  }
+  
+}
